@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        .vertical-nav {
+            float: left;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+            border: 1px solid #555;
+        }
+
+        .vertical-nav li a {
+            display: block;
+            color: blue;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .vertical-nav li a:hover {
+            background-color: rgb(219, 193, 47);
+            color: white;
+        }
+
+        .horizontal-nav-container {
+            text-align: center;
+        }
+
+        .horizontal-nav {
+            display: inline-block;
+            background-color: white;
+            border: 1px solid #555;
+            width: 400px;
+        }
+
+        .horizontal-nav a {
+            display: inline-block;
+            color: blue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-right: 1px solid black;
+        }
+
+        .horizontal-nav a:last-child {
+            border-right: none;
+        }
+
+        .horizontal-nav a:hover {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h2>Vertical Navigation Bar</h2>
+    <ul class="vertical-nav">
+        <li><a href="">Home</a></li>
+        <li><a href="">Java</a></li>
+        <li><a href="">CSS</a></li>
+        <li><a href="">HTML</a></li>
+        <li><a href="">Bootstrap</a></li>
+    </ul>
+
+    <div class="horizontal-nav-container">
+        <h2>Horizontal Navigation Bar</h2>
+        <div class="horizontal-nav">
+            <a href="">Home</a>
+            <a href="">Java</a>
+            <a href="">CSS</a>
+            <a href="">HTML</a>
+            <a href="">Bootstrap</a>
+        </div>
+    </div>
+</body>
+</html>

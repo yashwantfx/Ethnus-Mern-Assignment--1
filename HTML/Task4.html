@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Task 4</title>
+    <style>
+        body {
+            margin: 50px;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            margin-bottom: 20px;
+        }
+        .form-label {
+            width: 200px;
+            display: inline-block;
+            text-align: right;
+            margin-right: 20px;
+        }
+        .form-input {
+            width: 250px;
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        .save-button {
+            background-color: rgb(244, 229, 201);
+            border-radius: 3px;
+            border: 2px solid rgb(227, 166, 54);
+            box-shadow: inset 2px 2px 10px rgb(228, 225, 221);
+            padding: 5px 20px;
+            cursor: pointer;
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <form action="form">
+        <div class="form-container">
+            <label class="form-label" for="fullname">Full Name:</label>
+            <input class="form-input" type="text" name="fullname" placeholder="Enter Name"><br>
+
+            <label class="form-label" for="Username">Username:</label>
+            <input class="form-input" type="text" name="username" placeholder="Enter Valid Username"><br>
+
+            <label class="form-label" for="password">Password:</label>
+            <input class="form-input" type="password" name="password"><br>
+
+            <label class="form-label" for="repassword">Re-enter password:</label>
+            <input class="form-input" type="password" name="re-enter password"><br>
+
+            <label class="form-label" for="address">Address:</label>
+            <input class="form-input" type="text" name="address" placeholder="Enter Address"><br>
+
+            <label class="form-label" for="age">Age:</label>
+            <input class="form-input" type="number" name="age" placeholder="Enter the Age"><br>
+
+            <label class="form-label" for="gender">Gender:</label>
+            <select class="form-input" name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+        </div>
+
+        <button class="save-button">Save</button>
+    </form>
+</body>
+</html>
